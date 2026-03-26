@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "TgCryptoX"
+version = "1.0.0"
+description = "Fast and Portable Cryptography Extension Library for Pyrogram, Rust rewrite of TgCrypto"
+readme = "README.md"
+license = { text = "LGPL-3.0-or-later" }
+authors = [{ name = "SychO" }]
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security :: Cryptography",
+]
+keywords = ["pyrogram", "telegram", "crypto", "aes", "mtproto"]
+
+[project.urls]
+Homepage = "https://github.com/SychO3/tgcryptoX"
+Repository = "https://github.com/SychO3/tgcryptoX"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

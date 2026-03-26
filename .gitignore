@@ -1,0 +1,14 @@
+/target
+.idea/
+.venv/
+__pycache__
+*.pyc
+*.pyo
+*.so
+*.dylib
+*.pyd
+*.egg-info
+dist/
+build/
+.tox/
+*.whl
